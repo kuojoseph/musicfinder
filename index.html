@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	
+        <meta charset="UTF-8">	
+        <title>Music Finder
+        </title>	
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>  
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">  
+            <a class="navbar-brand" href="#">搜尋</a>  
+            <ul class="nav navbar-nav">    
+                <li class="nav-item active">      
+                    <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)
+                    </span></a>    
+                </li>  
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">請輸入單詞
+                </div>
+                <div class="panel-body">	
+                    <div class="col-sm-8">  	
+                        <form name="myForm">			
+                            <input type="text" class="form-control" name="keyword" id="inStr">    
+                        </form>	
+                    </div>	
+                    <div class="col-sm-4">		
+                        <button class="btn btn-default">搜尋
+                        </button>	
+                    </div>	
+                    <div id="show-data">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(".btn-default").click(function() {
+                var showData = $('#show-data');
+                $.getJSON('playlist.json', function (data) {
+                    console.log(data);
+                    var cntr = 0; 
+                    var cmpStr = document.getElementById('inStr').value;
+                    var outList = [];
+                    var items = data.items.map(function (item) {
+                        if ((item.cate.indexOf(cmpStr) != -1) ||
+                            (item.name.indexOf(cmpStr) != -1) ||
+                            (item.singer.indexOf(cmpStr) != -1)) {
+                          cntr++;
+                          outList.push( item.name + ': ' + item.singer + ' <a href=\"' + item.link + '\">Link</a>');
+                        }
+                    });
+                    showData.empty();
+                    if (0 < cntr) {
+                        var content = '<br><li>' + outList.join('</li><li>') + '</li>';
+                        var list = $('<ul />').html(content);
+                        showData.append(list);
+                    }
+                });
+                showData.text('Loading the JSON file.');
+            });
+        </script>
+    </body>
+</html>
