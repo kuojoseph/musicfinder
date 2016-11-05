@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "name": "100個太陽月亮",
+      "singer": "棉花糖樂團",
+      "link": "https://www.youtube.com/watch?v=hBp3wurRiNQ",
+      "cate": ""
+    },
+    {
+      "name": "美麗新天地",
+      "singer": "SHE",
+      "link": "https://www.youtube.com/watch?v=QDiSck_imgw",
+      "cate": ""
+    },
+    {
+      "name": "情人知己",
+      "singer": "梁文音",
+      "link": "https://www.youtube.com/watch?v=3RNpQqhxBbE",
+      "cate": ""
+    },
+    {
+      "name": "期待真愛",
+      "singer": "蔡嘉揚",
+      "link": "https://www.youtube.com/watch?v=jXE1KkCaMqo",
+      "cate": ""
+    },
+    {
+      "name": "為愛而生",
+      "singer": "讚美之泉",
+      "link": "https://www.youtube.com/watch?v=hSYtcWLUcI8",
+      "cate": ""
+    },
+    {
+      "name": "至少還有你",
+      "singer": "林憶蓮",
+      "link": "https://www.youtube.com/watch?v=pQlAWZLOpgo",
+      "cate": ""
+    },
+    {
+      "name": "你愛永不變",
+      "singer": "巫啟賢",
+      "link": "https://www.youtube.com/watch?v=hzihEvsJnxY&spfreload=10",
+      "cate": ""
+    },
+    {
+      "name": "當祢找到我",
+      "singer": "CHC城市豐收教會",
+      "link": "https://www.youtube.com/watch?v=e9bUNS7q57M",
+      "cate": ""
+    },
+    {
+      "name": "愛未完 Lov+ing",
+      "singer": "艾青",
+      "link": "https://www.youtube.com/watch?v=nM3twHd8nZ8",
+      "cate": ""
+    },
+    {
+      "name": "修煉愛情 Practice Love",
+      "singer": "林俊傑 JJ Lin",
+      "link": "https://www.youtube.com/watch?v=LWV-f6dMN3Q",
+      "cate": ""
+    },
+    {
+      "name": "最幸福的事",
+      "singer": "梁文音",
+      "link": "https://www.youtube.com/watch?v=P8tGsNt_2kw",
+      "cate": ""
+    },
+    {
+      "name": "知足",
+      "singer": "五月天 Mayday",
+      "link": "https://www.youtube.com/watch?v=_o0oeyCtoFA",
+      "cate": ""
+    },
+    {
+      "name": "不為誰作的歌",
+      "singer": "林俊傑 JJ Lin",
+      "link": "https://www.youtube.com/watch?v=gd38-X3HpbM",
+      "cate": ""
+    },
+    {
+      "name": "長路",
+      "singer": "艾青",
+      "link": "https://www.youtube.com/watch?v=5DV3X3Z4agM",
+      "cate": ""
+    },
+    {
+      "name": "重生",
+      "singer": "約書亞樂團",
+      "link": "https://www.youtube.com/watch?v=gaNBH1XqDDA",
+      "cate": ""
+    },
+    {
+      "name": "平安夜的巷弄",
+      "singer": "蔡嘉揚",
+      "link": "https://www.youtube.com/watch?v=PuPdU_lBsbY",
+      "cate": ""
+    },
+    {
+      "name": "向晚的迷途指南",
+      "singer": "棉花糖樂團",
+      "link": "https://www.youtube.com/watch?v=nuLJ-aT0Zx4",
+      "cate": ""
+    },
+    {
+      "name": "時空膠囊",
+      "singer": "棉花糖樂團",
+      "link": "https://www.youtube.com/watch?v=6XuVzV5FTKo",
+      "cate": ""
+    },
+    {
+      "name": "你一直都在",
+      "singer": "約書亞樂團",
+      "link": "https://www.youtube.com/watch?v=cR8Dl2SvPvA",
+      "cate": ""
+    }
+  ],
+  "obj": {
+    "number": 0.0000012345,
+    "enabled": true
+  },
+  "message": "Strings have to be in double-quotes."
+}
